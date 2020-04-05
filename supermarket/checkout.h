@@ -5,7 +5,7 @@ class Checkout
 {
 public:
 	Checkout();
-	void addItemPrice(std::string lItem, int lPrice = 0);
+	void addItemPrice(std::string lItem, int lPrice);
 	void addItem(std::string lItem);
 	void addDiscount(std::string, int numberOfItems, int discountPrice);
 	int calculateTotall();

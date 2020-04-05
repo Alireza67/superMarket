@@ -13,8 +13,15 @@ void Checkout::addItemPrice(string lItem, int lPrice) {
 }
 
 void Checkout::addItem(string lItem) {
-
-	items[lItem]++;
+	std::map<std::string, int>::iterator checkValue;
+	checkValue = prices.find(lItem);
+	if (checkValue != prices.end()) {
+		items[lItem]++;
+	}
+	else {
+		throw std::invalid_argument("There is any Price for this item!");
+	}
+	
 }
 
 void Checkout::addDiscount(std::string item, int numberOfItems, int discountPrice) {

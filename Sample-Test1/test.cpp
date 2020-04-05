@@ -1,6 +1,7 @@
 #include "pch.h"
+#include "../supermarket/checkout.h"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(checkoutTests, canGetInstantiateCheckout) {
+
+	Checkout co;
 }
